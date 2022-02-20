@@ -57,7 +57,6 @@ x_mark.config(width=10, height=3, text="❌", bg="red", fg="white", command=wron
 x_mark.grid(row=1, column=1)
 
 data = pandas.read_csv("korean flashcard.csv")
-#you can change korean flashcards to unknown words.csv. filenotfound error dega. catch that exception accourddinngly
 word_meanings = data.to_dict(orient="records")
 
 timer = window.after(5000, func=reveal_answer)
